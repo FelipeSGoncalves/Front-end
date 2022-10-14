@@ -31,6 +31,8 @@ body
 
 .left-login h1
 {
+  width: 100%;
+  font-size: 50px;
   padding: 20px;
 }
 .text
@@ -51,7 +53,7 @@ body
 .box
 {
   width: 70%;
-  height: 60%;
+  height: 50%;
   position: relative;
   justify-content: center;
   align-items: center;
@@ -104,7 +106,7 @@ body
   border-radius: 8px;
   background-color: #011936;
   z-index: 10;
-  padding: 50px 40px;
+  padding: 10px 40px;
   display: flex;
   flex-direction: column;
 }
@@ -132,7 +134,7 @@ body
   background-color: transparent ;
   border: none;
   outline: none;
-  color: #465362;
+  color: #011936;
   font-size: 1em;
   letter-spacing: 0.05;
   z-index: 10;
@@ -218,5 +220,35 @@ input[type="submit"]:active
   opacity: 0.8;
 }
 
+@media only screen and (max-width: 950px){
+  .box{
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .main-login{
+    flex-direction: column;
+  }
+
+  .left-login{
+    width: 100vw;
+    height: 10vh;
+  }
+
+  .right-login{
+    width: 100vw;
+    height: 70vh;
+  }
+  
+  .left-login h1{
+    font-size: 20px;
+  }
+
+  .box{
+    height: 70%;
+  }
+  
+}
 
 
